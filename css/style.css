@@ -177,16 +177,40 @@ background-color:red;
     transform: translateX(100%);
   }
 }
+.whole2{
+  display: flex;
+
+}
+.annimationagenda{
+   display: flex;
+   flex-direction: row;
+   width: 80px;
+   gap: 10px;
+   height: 200px;
+  animation: scrollText 20s linear infinite;
+  margin-top: 20px;
+
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+
+}
 .welcome {
   overflow: hidden;
   white-space: nowrap;
-  background: #ffffff;
+  background: #075340;
   padding: 10px 0;
 }
 
 .welcome a {
   display: inline-block;
-  color: #ff0000;
+  color: #fcfcfd;
   font-weight: bold;
   text-decoration: none;
   animation: scrollText 15s linear infinite;
@@ -195,6 +219,7 @@ background-color:red;
 .welcome a:hover {
   animation-play-state: paused;
   text-decoration: underline;
+  color: #f70202;
 }
 
 @keyframes scrollText {
@@ -305,6 +330,7 @@ background-color:red;
 
 .products-section {
   padding: 40px 20px;
+  margin-top: 200px;
 }
 
 .products-section h2 {
